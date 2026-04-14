@@ -117,7 +117,12 @@
 
 ### Step 8: 保存配置
 
-将所有配置信息写入项目根目录的 `trading-config.md` 文件：
+根据使用的平台，将配置信息保存到对应位置：
+
+- **Claude Code**: 写入项目根目录的 `trading-config.md` 文件
+- **OpenClaw**: 追加到 `USER.md` 中的 `[trading-journal-config]` 段落
+
+配置格式：
 
 ```markdown
 ## [trading-journal-config]
@@ -166,12 +171,17 @@
 
 配置完成后，建议用户做一次测试：
 
+**Claude Code 用户**:
 > 配置完成！让我们测试一下：
-> 
-> 你可以：
 > 1. 运行 `/project:log-trade 做多AAPL 50股 180入` 测试录入
 > 2. 运行 `/project:review` 来创建今天的复盘
 > 3. 运行 `/project:streak` 查看复盘连续天数
+
+**OpenClaw 用户**:
+> 配置完成！让我们测试一下：
+> 1. 发一张交易截图试试录入
+> 2. 打字描述一笔交易，如 "做多AAPL 50股 180入"
+> 3. 说 "复盘" 来创建今天的复盘
 
 ---
 
